@@ -61,10 +61,10 @@ namespace PFFind
             {
                 //If the title contains what we are looking for
                 //Instantly store it
-                if (d.title.Contains(searchFor.ToLower(), StringComparison.CurrentCultureIgnoreCase))
+                if (d.title.Contains(searchFor, StringComparison.CurrentCultureIgnoreCase))
                     toReturn.Add(d);
                 //Else if does not, check the text itself
-                else if (d.selftext.Contains(searchFor.ToLower(), StringComparison.CurrentCultureIgnoreCase))
+                else if (d.selftext.Contains(searchFor, StringComparison.CurrentCultureIgnoreCase))
                     toReturn.Add(d);
             }
             return toReturn;
