@@ -1,0 +1,8 @@
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\bin\Debug\PFFind.exe.config
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\obj\Debug\PFFind.csprojResolveAssemblyReference.cache
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\bin\Debug\PFFind.exe
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\bin\Debug\PFFind.pdb
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\obj\Debug\PFFind.exe
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\obj\Debug\PFFind.pdb
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\bin\Debug\Newtonsoft.Json.dll
+c:\users\gkam4141\documents\visual studio 2015\Projects\PFFind\PFFind\bin\Debug\Newtonsoft.Json.xml
