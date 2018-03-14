@@ -26,6 +26,12 @@ namespace PFFind
             var appSettings = ConfigurationManager.AppSettings;
             try
             {
+
+                //Unit test
+                FIndexFunds findexfunds = new FIndexFunds();
+                findexfunds.Find(UnitTest.FIndexFund());
+                //==========================================
+
                 HttpClient client = new HttpClient();
                 var response = await client.GetStringAsync(appSettings["pf_url"]);
 

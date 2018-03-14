@@ -16,6 +16,7 @@ namespace PFFind
             {
                 Console.WriteLine("Contains {0} : {1}", searchFor, d.title);
             }
+
         }
     }
 }
