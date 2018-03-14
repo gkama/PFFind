@@ -28,8 +28,8 @@ namespace PFFind
             {
 
                 //Unit test
-                FIndexFunds findexfunds = new FIndexFunds();
-                findexfunds.Find(UnitTest.FIndexFund());
+                FIndexFunds findexfunds = new FIndexFunds(UnitTest.FIndexFund());
+                Console.WriteLine(findexfunds.ToString());
                 //==========================================
 
                 HttpClient client = new HttpClient();

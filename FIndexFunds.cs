@@ -10,14 +10,10 @@ namespace PFFind
     public class FIndexFunds
     {
         public List<string> Funds { get; set; }
-        public FIndexFunds()
+        public FIndexFunds(PFFind.data data)
         {
             this.Funds = new List<string>();
-        }
-
-        public bool Find(PFFind.data data)
-        {
-            return FoundFIndexFunds(data);
+            this.FoundFIndexFunds(data);
         }
 
         //Is it a Fidelity Index Fund
@@ -42,6 +38,16 @@ namespace PFFind
                     if (!Funds.Contains(m.Value.ToUpper())) this.Funds.Add(m.Value.ToUpper());
             }
             return this.Funds.Count > 0 ? true : false;
+        }
+
+        //Override toString() to return all the funds
+        public override string ToString()
+        {
+            StringBuilder toReturn = new StringBuilder();
+            foreach (string s in this.Funds) toReturn.Append(s).Append('\n');
+            string _toReturn = toReturn.ToString().TrimEnd('\n');
+
+            return !string.IsNullOrEmpty(_toReturn) ? _toReturn : "";
         }
     }
 }
