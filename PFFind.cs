@@ -90,16 +90,18 @@ namespace PFFind
             public string subreddit_id { get; set; }
 
             private string _selfText;
+            private string _selfFullText;
             public string selftext
             {
-                get { return _selfText; }
+                get { return _selfFullText.Length >= 1000 ? _selfFullText : _selfText; }
                 set
                 {
                     //Set only first 1000 characters
                     this._selfText = value.Length <= 1000 ? value : value.Substring(0, 1000);
-                    this._selfText = this._selfText.Contains("\n\n") ? this._selfText.Replace("\n\n", " ") : this._selfText;
+                    this._selfFullText = value;
                 }
             }
+            
         }
     }
 }
