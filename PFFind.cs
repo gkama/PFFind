@@ -29,7 +29,10 @@ namespace PFFind
 
                 //Unit test
                 FIndexFunds findexfunds = new FIndexFunds(UnitTest.FIndexFund());
+                FIndexFunds findexfunds_2 = new FIndexFunds(UnitTest.FIndexFund_2());
                 Console.WriteLine(findexfunds.ToString());
+                Console.WriteLine("Incorrect test======");
+                Console.WriteLine(findexfunds_2.ToString());
                 //==========================================
 
                 HttpClient client = new HttpClient();

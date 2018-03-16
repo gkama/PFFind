@@ -21,7 +21,7 @@ namespace PFFind
         private bool FoundFIndexFunds(PFFind.data data)
         {
             string FIndexPattern = @"\bF\w*[A-Z]{4}\b";
-            Regex rgx = new Regex(FIndexPattern, RegexOptions.IgnoreCase);
+            Regex rgx = new Regex(FIndexPattern);
             MatchCollection matches_title = rgx.Matches(data.title);
             MatchCollection matches_text = rgx.Matches(data.selftext);
 
