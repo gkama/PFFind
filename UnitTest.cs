@@ -13,7 +13,8 @@ namespace PFFind
         {
             PFFind.data data = new PFFind.data()
             {
-                title = "This is a test",
+                id = "unit_testid",
+                title = "This is a test to find fidelity index funds",
                 score = 4000,
                 url = "https://test.com/",
                 num_comments = 100,
@@ -26,13 +27,46 @@ namespace PFFind
         {
             PFFind.data data = new PFFind.data()
             {
-                title = "This is a test to not find index funds",
+                id = "unit_testid",
+                title = "This is a test to not find fidelity index funds",
                 score = 4000,
                 url = "https://test.com/",
                 num_comments = 100,
                 subreddit_id = "subreddit_id",
                 selftext = "this is where the real test is FUSV (this is incorrect), then there is this fsevx (this is correct length"
                             + " but not capitalized)" + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            };
+            return data;
+        }
+
+
+
+        //401k test case
+        public static PFFind.data Four01k()
+        {
+            PFFind.data data = new PFFind.data()
+            {
+                id = "unit_testid",
+                title = "This is a test to find 401k",
+                score = 4000,
+                url = "https://test.com/",
+                num_comments = 100,
+                subreddit_id = "subreddit_id",
+                selftext = "this is where the real test is 401k, then there is this four oh 1 k"
+            };
+            return data;
+        }
+        public static PFFind.data Four01k_2()
+        {
+            PFFind.data data = new PFFind.data()
+            {
+                id = "unit_testid",
+                title = "This is a test to not find four01k",
+                score = 4000,
+                url = "https://test.com/",
+                num_comments = 100,
+                subreddit_id = "subreddit_id",
+                selftext = "this is where the real test is four01k, then there is this four oh 1 k"
             };
             return data;
         }

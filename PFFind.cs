@@ -30,9 +30,17 @@ namespace PFFind
                 //Unit test
                 FIndexFunds findexfunds = new FIndexFunds(UnitTest.FIndexFund());
                 FIndexFunds findexfunds_2 = new FIndexFunds(UnitTest.FIndexFund_2());
+                Four01k four01k = new Four01k(UnitTest.Four01k());
+                Four01k four01k_2 = new Four01k(UnitTest.Four01k_2());
+
+                Console.WriteLine("===Fidelity Index Test===");
                 Console.WriteLine(findexfunds.ToString());
-                Console.WriteLine("Incorrect test======");
+                Console.WriteLine("===Fidelity Index Test: Incorrect===");
                 Console.WriteLine(findexfunds_2.ToString());
+                Console.WriteLine("===401k Test===");
+                Console.WriteLine(four01k.ToString());
+                Console.WriteLine("===401k Test: Incorrect===");
+                Console.WriteLine(four01k_2.ToString());
                 //==========================================
 
                 HttpClient client = new HttpClient();
@@ -101,7 +109,12 @@ namespace PFFind
                     this._selfFullText = value;
                 }
             }
-            
+
+            //ToString() override
+            public override string ToString()
+            {
+                return string.Format("title: {0}\nid: {1}", this.title, this.id);
+            }
         }
     }
 }

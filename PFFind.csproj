@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Four01k.cs" />
     <Compile Include="FIndexFunds.cs" />
     <Compile Include="PFFind.cs" />
     <Compile Include="Program.cs" />
